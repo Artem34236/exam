@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.active {
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.active::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    border: 2px solid #B59571;
+}
